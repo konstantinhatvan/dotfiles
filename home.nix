@@ -7,6 +7,7 @@
   home.packages = with pkgs; [
     ripgrep
     jq
+    fd
   ];
 
   programs.home-manager.enable = true;
