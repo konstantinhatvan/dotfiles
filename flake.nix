@@ -12,7 +12,10 @@
   outputs = { self, nixpkgs, home-manager, ... }: {
     homeConfigurations."konstantin-hatvan" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      modules = [ ./home.nix ];
+      modules = [
+        ./home.nix
+	./programs/git.nix
+      ];
     };
   };
 }
