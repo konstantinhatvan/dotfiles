@@ -14,6 +14,7 @@
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       modules = [
         ./home.nix
+	./env.nix
 	./programs/git.nix
       ];
     };
