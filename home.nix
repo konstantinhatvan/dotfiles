@@ -8,6 +8,7 @@
     ripgrep
     jq
     fd
+    neovim
   ];
 
   programs.home-manager.enable = true;

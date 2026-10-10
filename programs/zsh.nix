@@ -21,9 +21,6 @@
       export OPENCODE_REMOTE_CONFIG_API_KEY="op://Infrastructure/OPENCODE_REMOTE_CONFIG_API_KEY/credential"
       alias opencode="op run --no-masking -- opencode"
 
-      # Neovim
-      export PATH=$PATH:/opt/nvim-linux-x86_64/bin
-
       # Angular CLI autocompletion
       source <(ng completion script)
 
