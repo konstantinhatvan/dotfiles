@@ -18,7 +18,6 @@
       . "$HOME/.local/bin/env"
 
       # opencode
-      export PATH=/home/konstantin-hatvan/.opencode/bin:$PATH
       export OPENCODE_REMOTE_CONFIG_API_KEY="op://Infrastructure/OPENCODE_REMOTE_CONFIG_API_KEY/credential"
       alias opencode="op run --no-masking -- opencode"
 

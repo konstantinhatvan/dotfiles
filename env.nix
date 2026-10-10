@@ -16,7 +16,12 @@ let
   };
 in
 {
-  home.sessionVariables = sessionEnv;
+  home = {
+    sessionVariables = sessionEnv;
+    sessionPath = [
+      "/home/konstantin-hatvan/.opencode/bin"
+    ];
+  };
 
   xdg.configFile."environment.d/90-session-vars.conf".text =
     lib.concatStringsSep "\n"
