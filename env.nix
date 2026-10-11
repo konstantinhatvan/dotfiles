@@ -20,6 +20,7 @@ in
     sessionVariables = sessionEnv;
     sessionPath = [
       "/home/konstantin-hatvan/.opencode/bin"
+      "/home/konstantin-hatvan/.local/bin"
     ];
   };
 
