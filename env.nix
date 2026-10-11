@@ -21,6 +21,7 @@ in
     sessionPath = [
       "/home/konstantin-hatvan/.opencode/bin"
       "/home/konstantin-hatvan/.local/bin"
+      "/home/konstantin-hatvan/.local/share/JetBrains/Toolbox/scripts"
     ];
   };
 
