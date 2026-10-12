@@ -17,6 +17,7 @@
 	    ./env.nix
 	    ./programs/git.nix
 	    ./programs/zsh.nix
+	    ./programs/gh.nix
       ];
     };
   };
