@@ -9,6 +9,7 @@
     jq
     fd
     neovim
+    gnumake
   ];
 
   programs.home-manager.enable = true;
