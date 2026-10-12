@@ -15,15 +15,15 @@
       [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                    # This loads nvm
       [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+      # LiteLLM
+      export LITELLM_API_KEY="op://Employee/craftworks- LiteLLM key/credential"
+
       # opencode
       export OPENCODE_REMOTE_CONFIG_API_KEY="op://Infrastructure/OPENCODE_REMOTE_CONFIG_API_KEY/credential"
       alias opencode="op run --no-masking -- opencode"
 
       # Angular CLI autocompletion
       source <(ng completion script)
-
-      # LiteLLM
-      export LITELLM_API_KEY="op://Employee/craftworks- LiteLLM key/credential"
 
       # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
       export SDKMAN_DIR="$HOME/.sdkman"
