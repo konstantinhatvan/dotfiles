@@ -23,7 +23,7 @@
       source <(ng completion script)
 
       # LiteLLM
-      export LITELLM_API_KEY=$(op read "op://Employee/craftworks- LiteLLM key/credential")
+      export LITELLM_API_KEY="op://Employee/craftworks- LiteLLM key/credential"
 
       # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
       export SDKMAN_DIR="$HOME/.sdkman"
