@@ -19,6 +19,7 @@
 	    ./programs/zsh.nix
 	    ./programs/gh.nix
 	    ./programs/ssh.nix
+	    ./programs/mise.nix
       ];
     };
   };
