@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ config, lib, ... }:
 let
   sessionEnv = {
     LANG = "en_GB.UTF-8";
@@ -13,6 +13,7 @@ let
     LC_IDENTIFICATION = "en_GB.UTF-8";
     PAPERSIZE = "a4";
     DISABLE_TELEMETRY = "1";
+    XDG_DATA_DIRS = "${config.home.homeDirectory}/.nix-profile/share:${config.home.homeDirectory}/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop";
   };
 in
 {
@@ -28,4 +29,11 @@ in
   xdg.configFile."environment.d/90-session-vars.conf".text =
     lib.concatStringsSep "\n"
       (lib.mapAttrsToList (n: v: "${n}=${v}") sessionEnv);
+
+  dconf.settings = {
+    "org/gnome/desktop/default-applications/terminal" = {
+      exec = "/snap/bin/ghostty";
+      exec-arg = "-e";
+    };
+  };
 }
