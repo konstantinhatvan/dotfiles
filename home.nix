@@ -8,21 +8,8 @@
     ripgrep
     jq
     fd
-    neovim
     gnumake
     ast-grep
-    tmux
-    hadolint
-    tokei
-    tree
-    parallel
-    watchexec
-    shellcheck
-    shfmt
-    yq
-    miller
-    hyperfine
-    dust
   ];
 
   programs.home-manager.enable = true;
