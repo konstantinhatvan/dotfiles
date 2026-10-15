@@ -13,8 +13,9 @@ The following tools are preinstalled on this machine.
 
 ## Toolchains
 
-`node`, `java` and `maven` come from mise.
+`node`, `java`, `maven` and `uv` come from mise.
 The project's `.nvmrc` decides the Node version — never install, update, or switch toolchains yourself.
+Do not run `uv self update`; bump uv via `programs/mise.nix`.
 The Angular CLI is not global: use `npx ng` or npm scripts.
 
 ## Secrets
