@@ -22,6 +22,7 @@
         ./programs/mise.nix
         ./programs/opencode.nix
         ./programs/uv.nix
+        ./programs/npm.nix
       ];
     };
   };
