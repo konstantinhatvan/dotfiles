@@ -21,6 +21,7 @@
         ./programs/ssh.nix
         ./programs/mise.nix
         ./programs/opencode.nix
+        ./programs/uv.nix
       ];
     };
   };
