@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "sonarqube": {
+        "type": "remote",
+        "url": "https://sonarqube.craftworks.io/mcp",
+        "oauth": false,
+        "headers": {
+          "Authorization": "Bearer {env:SONARQUBE_TOKEN}",
+          "SONARQUBE_READ_ONLY": "true"
+        }
+      }
+    }
+  }
+}
