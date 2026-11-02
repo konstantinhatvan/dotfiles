@@ -33,15 +33,15 @@ Never echo, log, or persist token values.
 
 ## Git commits
 
-Commit your work as you go, one task at a time; do not push unless explicitly asked.
+Commit your work as you go, one task at a time. Do not push unless explicitly asked.
 
-- One commit = one logical change; keep commits small.
-- A commit ships the final documentation of the behavior it introduces; fix doc lines from the same unpushed chain by amend/rebase, never by follow-up commits.
-- No commit may reference what a later commit adds — this decides commit order.
+- One commit is one logical change. Keep commits small.
+- A commit ships the final documentation of the behavior it introduces. Fix documentation of the same unpushed chain by amend or rebase. Never in follow-up commits.
+- No commit may reference what a later commit adds. This decides commit order.
 - Mechanical bulk changes (renames, formatting, dependency bumps) go in their own commit, separate from behavior changes.
-- Every commit in a chain must build and pass tests, so `git bisect` stays usable.
+- Every commit in a chain builds and passes tests. This keeps `git bisect` usable.
 - Finish the commit chain for the current task before starting the next one.
-- Stage files explicitly; never `git add -A`; review `git diff --cached` before committing.
-- Message: short imperative subject, matching the repo's existing `git log` style; rationale that has no file to live in goes in the message, not in repo docs.
-- Never commit secrets (see above); never `--no-verify` or `--no-gpg-sign`; never rewrite or force-push published history.
-- Rewriting unpushed history: record the old tip SHA first; move the branch only when the diff against it is empty and every commit's message still matches its content.
+- Stage files explicitly. Never `git add -A`. Review `git diff --cached` before committing.
+- The message has a short imperative subject in the repo's `git log` style. Rationale with no file to live in belongs in the message. Never in repo docs.
+- Never commit secrets (see above). Never `--no-verify` or `--no-gpg-sign`. Never rewrite or force-push published history.
+- When rewriting unpushed history, record the old tip SHA first. Move the branch only when the diff against it is empty and every commit message matches its content.
