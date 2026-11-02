@@ -24,6 +24,13 @@ The Angular CLI is not global: use `npx ng` or npm scripts.
 Secrets exist only as `op://` references resolved via the 1Password CLI (`op run`, `op read`).
 Never echo, log, or persist token values.
 
+## Writing
+
+- Documentation should only add non-obvious context or prevent mistakes.
+- Keep a single source of truth for a documented fact. Put it where the next editor of that fact will look. If the fact needs to be documented elsewhere, reference it. Never restate.
+- Document what the code cannot say itself (rationale, caveats). Never restate content the reader sees by opening the file.
+- Documentation states the current state. History belongs in the git log. Reassurance in the PR description.
+
 ## Git commits
 
 Commit your work as you go, one task at a time; do not push unless explicitly asked.
