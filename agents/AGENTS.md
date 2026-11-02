@@ -10,6 +10,7 @@ The following tools are preinstalled on this machine.
 | Find entries in the filesystem                           | `fd` (instead of `find`)               |
 | Recursively search directories for a regex pattern       | `rg` (instead of `grep -r`)            |
 | Search and Rewrite code at large scale using AST pattern | `ast-grep` — load the `ast-grep` skill |
+| Run project tasks defined in a `Taskfile.yml`            | `task` (GoTask)                        |
 
 ## Toolchains
 

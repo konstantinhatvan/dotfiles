@@ -10,6 +10,7 @@
     fd
     gnumake
     ast-grep
+    go-task
   ];
 
   programs.home-manager.enable = true;
